@@ -1,13 +1,5 @@
 class Card {
     constructor() {
-
-    }
-
-    play() {
-
-    }
-
-    discard() {
-        
+        this.value = 0;
     }
 }

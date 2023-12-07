@@ -20,13 +20,14 @@
 <script src="src/Cards/Guard.js"></script>
 <script src="src/Cards/Spy.js"></script>
 <script src="src/Player.js"></script>
+<script src="src/Deck.js"></script>
 <script src="src/Game.js"></script>
 <script>
 let players = [
     new Player('Gene'),
     new Player('Cuong'),
 ];
-let deck = [
+let cards = [
     new Princess(),
     new Countess(),
     new King(),
@@ -48,6 +49,10 @@ let deck = [
     new Spy(),
     new Spy(),
 ];
+let deck = new Deck(cards);
 let game = new Game(players, deck);
+
+console.log(deck);
+console.log(players);
 </script>
 </html>
