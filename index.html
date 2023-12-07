@@ -6,7 +6,7 @@
     <title>Love Letter</title>
 </head>
 <body>
-    
+    <button onclick="game.turn(); log();">Turn</button>
 </body>
 <script src="src/Card.js"></script>
 <script src="src/Cards/Princess.js"></script>
@@ -23,10 +23,6 @@
 <script src="src/Deck.js"></script>
 <script src="src/Game.js"></script>
 <script>
-let players = [
-    new Player('Gene'),
-    new Player('Cuong'),
-];
 let cards = [
     new Princess(),
     new Countess(),
@@ -50,9 +46,16 @@ let cards = [
     new Spy(),
 ];
 let deck = new Deck(cards);
+let players = [
+    new Player('Gene'),
+    new Player('Cuong'),
+];
 let game = new Game(players, deck);
 
-console.log(deck);
-console.log(players);
+function log() {
+    console.log(deck);
+    // console.log(players);
+    console.log(players[game.current_player]);
+}
 </script>
 </html>
