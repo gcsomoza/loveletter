@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+</head>
+<body>
+    
+</body>
+<script src="src/Card.js"></script>
+<script src="src/Cards/Princess.js"></script>
+<script src="src/Cards/Countess.js"></script>
+<script src="src/Cards/King.js"></script>
+<script src="src/Cards/Chancellor.js"></script>
+<script src="src/Cards/Prince.js"></script>
+<script src="src/Cards/Handmaid.js"></script>
+<script src="src/Cards/Baron.js"></script>
+<script src="src/Cards/Priest.js"></script>
+<script src="src/Cards/Guard.js"></script>
+<script src="src/Cards/Spy.js"></script>
+<script src="src/Player.js"></script>
+<script src="src/Game.js"></script>
+<script>
+let players = [
+    new Player('Gene'),
+    new Player('Cuong'),
+];
+let deck = [
+    new Princess(),
+    new Countess(),
+    new King(),
+    new Chancellor(),
+    new Chancellor(),
+    new Prince(),
+    new Prince(),
+    new Handmaid(),
+    new Handmaid(),
+    new Baron(),
+    new Baron(),
+    new Priest(),
+    new Priest(),
+    new Guard(),
+    new Guard(),
+    new Guard(),
+    new Guard(),
+    new Guard(),
+    new Spy(),
+    new Spy(),
+];
+let game = new Game(players, deck);
+</script>
+</html>
